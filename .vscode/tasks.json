@@ -1,0 +1,28 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build patientbedsimulation",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "patientbedsimulation.cpp",
+                "-o",
+                "patientbedsimulation",
+                "-I${workspaceFolder}/vcpkg/installed/x64-linux/include",
+                "-L${workspaceFolder}/vcpkg/installed/x64-linux/lib",
+                "-lpaho-mqttpp3",
+                "-lpaho-mqtt3as",
+                "-lssl",
+                "-lcrypto",
+                "-lpthread"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Build the patientbedsimulation C++ program using vcpkg libraries"
+        }
+    ]
+}
