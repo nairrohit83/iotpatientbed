@@ -1,11 +1,10 @@
 # Patient Bed IoT Simulator
-
-
+![Results on Grafana](https://github.com/nairrohit83/iotpatientbed/blob/main/grafana_dashboard_snapshot.png)
 
 ## Overview
 
 This project simulates patient bed telemetry (heart rate, SpO2, bed inclination) and publishes data securely to AWS IoT Core using MQTT over TLS. The data is collected and visualized using InfluxDB, Telegraf, and Grafana on an AWS EC2 instance.
-![Results on Grafana](https://github.com/nairrohit83/iotpatientbed/blob/main/grafana_dashboard_snapshot.png)
+
 ---
 
 ## Features
